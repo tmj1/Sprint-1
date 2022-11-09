@@ -1,0 +1,39 @@
+.error {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.error-page__title {
+     margin: 0;
+     font-size: 40px;
+     color: #1e1e1e;
+     font-weight: 500;
+     line-height: 40px;
+     margin-bottom: 20px;
+ }
+
+.error-page__subtitle {
+     margin: 0;
+     font-size: 20px;
+     color: #1e1e1e;
+     font-weight: 500;
+     line-height: 20px;
+     text-align: center;
+     max-width: 180px;
+     margin-bottom: 69px;
+ }
+
+.error-page__link {
+     text-decoration: none;
+     font-size: 11px;
+     color: #3369f3;
+     font-weight: 500;
+     line-height: 11px;
+     transition: 0.3s opacity;
+ }
+
+.error-page__link:hover {
+     opacity: 0.8;
+ }

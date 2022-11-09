@@ -1,0 +1,13 @@
+---
+title: Непредвиденная проблема
+css:
+- ../vendor/normalize.css
+- ../vendor/fonts.css
+- ../styles/styles.css
+- ../partials/error/error.css
+---
+{{!< base}}
+
+<div class="page">
+    {{> error/error title="5**" subtitle="Ошибка сервера"}}
+</div>

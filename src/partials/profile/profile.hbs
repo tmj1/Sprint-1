@@ -1,0 +1,22 @@
+<ul class="profile">
+    {{> btnBackProfile/btnBackProfile href="./chat.hbs"}}
+    <li class="profile__column">
+        <form class="profile__form">
+            {{> editAvatar/editAvatar}}
+            <p class="profile__user-name">Иван</p>
+            <ul class="profile__list">
+                {{> inputProfile/inputProfile helperText="Почта" value=profile.payload.email}}
+                {{> inputProfile/inputProfile helperText="Логин" value=profile.payload.name}}
+                {{> inputProfile/inputProfile helperText="Имя" value=profile.payload.name}}
+                {{> inputProfile/inputProfile helperText="Фамилия" value=profile.payload.lastName}}
+                {{> inputProfile/inputProfile helperText="Имя в чате" value=profile.payload.chatName}}
+                {{> inputProfile/inputProfile helperText="Телефон" value=profile.payload.phone}}
+            </ul>
+            <ul class="profile__list">
+                {{> btnProfile/btnProfile text="Сохранить" classes="btn-profile__link_color_red"}}
+                {{> btnProfile/btnProfile href="./editPassword.hbs" text="Изменить пароль" classes="btn-profile__link_color_red"}}
+                {{> btnProfile/btnProfile href="./index.hbs" text="Выйти" classes="btn-profile__link_color_blue"}}
+            </ul>
+        </form>
+    </li>
+</ul>

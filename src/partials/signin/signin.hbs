@@ -1,0 +1,12 @@
+<form class="signin">
+    <h1 class="signin__title">Вход</h1>
+    {{>input/input type="text" helperText="Логин" minlength="5" maxlength="20"}}
+    {{>input/input type="password" helperText="Пароль" minlength="4" maxlength="20"}}
+    {{>button/button href="./chat.hbs" textBtn="Авторизация"}}
+    <a class="signin__link" href="./register.hbs">Создать профиль</a>
+    <a class="signin__link" href="./notFound.hbs">Ошибка 404</a>
+    <a class="signin__link" href="./500page.hbs">Ошибка 5**</a>
+    <a class="signin__link" href="./chat.hbs">Список чатов</a>
+    <a class="signin__link" href="./profile.hbs">Профиль/Изменение профиля</a>
+
+</form>

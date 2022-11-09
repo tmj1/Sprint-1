@@ -1,0 +1,36 @@
+<ul class="chat">
+<li class="chat__column chat__column_left">
+    <a class="chat__link-profile page__link-profile" href="/">
+        <span class="chat__link-text">Профиль</span>
+        <img class="chat__link-img" src="../partials/image/right-arrow.svg" alt="Перейти к профилю пользователя">
+    </a>
+    {{> search/search}}
+<ul class="chat__list">
+        {{#each chats.payload}}
+            {{> listItem/listItem this=this }}
+        {{/each}}
+    </ul>
+    </li>
+        <li class="chat__column chat__column-default">
+            <h2 class="chat__title">Выберите чат и отправьте сообщение</h2>
+        </li>
+        <li class="chat__column chat__column-dialog chat__column_is-hidden">
+            <div class="chat__header">
+                <div class="chat__inner">
+                    <label class="profile__label" for="input__file">
+                        <img class="profile__img" src="../partials/image/avatar.svg" alt="Аватар пользователя" />
+                    </label>
+                    <p class="chat__user-name">Максим</p>
+                </div>
+            </div>
+            <p class="chat__text-date">09 ноября</p>
+            <ul class="chat__messages">
+                {{#each messages.payload}}
+                    {{> message/message this=this }}
+                {{/each}}
+            </ul>
+            {{> writeMessage/writeMessage}}
+        </li>
+    <a class="chat__link-text" href="">Добавить пользователя</a>
+    <a class="chat__link-text" href="">Удалить пользователя</a>
+    </ul>
