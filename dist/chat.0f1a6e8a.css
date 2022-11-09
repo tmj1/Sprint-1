@@ -1,0 +1,75 @@
+.write-message {
+  border-top: 1px solid #eaeaea;
+  padding-top: 11px;
+}
+
+.write-message__form {
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+  display: flex;
+}
+
+.write-message__input {
+  box-sizing: border-box;
+  width: 100%;
+  color: #1e1e1e;
+  background-color: #efefef;
+  border-width: 1px;
+  border-color: #0000;
+  border-radius: 30px;
+  outline: none;
+  margin: 0 10px;
+  padding: 10px 20px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+  transition: border-color .3s;
+}
+
+.write-message_input:hover, .write-message__input:focus {
+  border-color: #999;
+}
+
+.write-message__input::placeholder {
+  color: #999;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 12px;
+}
+
+.write-message__btn-attach {
+  cursor: pointer;
+  width: 32px;
+  height: 32px;
+  background-color: #0000;
+  border: none;
+  padding: 0;
+  transition: opacity .3s;
+}
+
+.write-message__btn-attach:hover {
+  opacity: .8;
+}
+
+.write-message__btn-send {
+  box-sizing: border-box;
+  cursor: pointer;
+  min-width: 28px;
+  height: 28px;
+  background-color: #3369f3;
+  border: none;
+  border-radius: 50%;
+  padding: 0;
+  transition: opacity .3s;
+}
+
+.write-message__btn-send:hover {
+  opacity: .8;
+}
+
+.write-message__icon-attach {
+  width: 32px;
+}
+
+/*# sourceMappingURL=chat.0f1a6e8a.css.map */

@@ -9,7 +9,6 @@
 .idea/**/dictionaries
 .idea/**/shelf
 .parcel-cache
-dist
 node_modules
 
 # Generated files

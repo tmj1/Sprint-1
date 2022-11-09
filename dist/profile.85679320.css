@@ -1,0 +1,36 @@
+.btn-profile {
+  text-align: left;
+  border-bottom: 1px solid #eaeaea;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+  list-style: none;
+}
+
+.btn-profile:last-of-type {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.btn-profile__link {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 13px;
+  text-decoration: none;
+  transition: opacity .3s;
+  display: inline-block;
+}
+
+.btn-profile__link:hover {
+  opacity: .7;
+}
+
+.btn-profile__link_color_red {
+  color: red;
+}
+
+.btn-profile__link_color_blue {
+  color: #3369f3;
+}
+
+/*# sourceMappingURL=profile.85679320.css.map */

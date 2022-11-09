@@ -1,0 +1,40 @@
+.error {
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.error-page__title {
+  color: #1e1e1e;
+  margin: 0 0 20px;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 40px;
+}
+
+.error-page__subtitle {
+  color: #1e1e1e;
+  text-align: center;
+  max-width: 180px;
+  margin: 0 0 69px;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 20px;
+}
+
+.error-page__link {
+  color: #3369f3;
+  font-size: 11px;
+  font-weight: 500;
+  line-height: 11px;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.error-page__link:hover {
+  opacity: .8;
+}
+
+/*# sourceMappingURL=notFound.afaa7674.css.map */
