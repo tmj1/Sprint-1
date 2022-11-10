@@ -4,8 +4,8 @@
   "description": "---",
   "scripts": {
     "build": "parcel build ./src/pages/index.hbs --no-cache --public-url ./",
-    "start": "parcel ./src/pages/index.hbs --no-cache && parcel watch ./*",
-    "server": "parcel build ./dist/index.html && node server"
+    "dev": "parcel ./src/pages/index.hbs --no-cache && parcel watch ./*",
+    "start": "node ./server.js"
   },
   "repository": {
     "type": "git",
