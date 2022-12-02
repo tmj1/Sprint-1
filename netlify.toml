@@ -16,7 +16,17 @@
   from = "/profile"
   to = "/"
   status = 200
+  
+ [[redirects]]
+  from = "/change-profile"
+  to = "/"
+  status = 200
 
+ [[redirects]]
+  from = "/change-password"
+  to = "/"
+  status = 200
+  
 [[redirects]]
   from = "/not-found"
   to = "/"
