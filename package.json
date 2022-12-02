@@ -1,11 +1,24 @@
-{
-  "name": "Messenger Sprint 1",
   "version": "1.0.0",
   "description": "---",
   "scripts": {
-    "build": "parcel build ./src/pages/index.hbs --no-cache --public-url ./",
-    "dev": "parcel ./src/pages/index.hbs --no-cache && parcel watch ./*",
-    "start": "node ./server.js"
+    "build": "parcel build ./src/index.html",
+    "dev": "parcel src/index.html --no-source-maps",
+    "start": "node ./api/server.js",
+    "lint:ts": "npx eslint .",
+    "lint:style": "npx stylelint \"**/*.css\" --fix"
+  },
+  "alias": {
+    "core": "./src/core",
+    "pages": "./src/pages",
+    "components": "./src/components",
+    "img": "./src/image",
+    "routes": "./src/routes",
+    "types": "./src/types",
+    "data": "./src/data",
+    "vendor": "./src/vendor",
+    "variables": "./src/variables",
+    "utils": "./src/utils",
+    "styles": "./src/styles"
   },
   "repository": {
     "type": "git",
