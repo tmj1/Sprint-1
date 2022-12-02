@@ -1,0 +1,42 @@
+.edit-avatar {
+  display: inline-block;
+  position: relative;
+  cursor: pointer;
+  margin-bottom: 21px;
+}
+
+.edit-avatar::before {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background-color: var(--overlay-avatar-color);
+    border-radius: 50%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: 0.3s opacity;
+  }
+
+.edit-avatar__span {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s opacity;
+    font-size: 13px;
+    color: var(--third-color);
+    font-weight: 500;
+    line-height: 14px;
+  }
+
+.edit-avatar:hover::before {
+    opacity: 1;
+  }
+
+.edit-avatar:hover > .edit-avatar__span {
+    opacity: 1;
+  }
+

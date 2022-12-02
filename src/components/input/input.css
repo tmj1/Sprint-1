@@ -1,0 +1,93 @@
+.input {
+  margin: 0;
+  padding: 0;
+  border: none;
+  position: relative;
+  margin-bottom: 26px;
+}
+
+  @media screen and (max-width: 425px) {
+    .input {
+      margin-bottom: 22px;
+    }
+  }
+
+.input_is-auth {
+  margin-bottom: 136px;
+}
+
+@media screen and (max-width: 320px) {
+      .input_is-auth {
+        margin-bottom: 120px;
+      }
+    }
+
+.input__text-field {
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    border-bottom: 1px solid var(--secondary-color);
+    padding-bottom: 7px;
+    font-size: 13px;
+    color: var(--primary-color);
+    font-weight: 500;
+    line-height: 13px;
+    margin-bottom: 7px;
+  }
+
+.input__label {
+    cursor: text;
+  }
+
+.input__text {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  width: 100%;
+  font-size: 13px;
+  color: var(--gray-color);
+  font-weight: 500;
+  line-height: 13px;
+  transition: 0.3s font-size, top 0.3s;
+}
+    @media screen and (max-width: 425px) {
+      .input__text {
+      font-size: 12px;
+    }
+  }
+
+.input__text_error {
+    color: var(--warning-color);
+  }
+
+.input__text-field:valid + .input__text {
+    top: -8px;
+  }
+
+.input__text-field:focus + .input__text {
+    top: -12px;
+    font-size: 9px;
+    line-height: 9px;
+  }
+
+.input__helper-text {
+    margin: 0;
+    min-height: 8px;
+    font-size: 8px;
+    color: var(--warning-color);
+    font-weight: 400;
+    line-height: 8px;
+    opacity: 0;
+  }
+
+.input__helper-text_show {
+    opacity: 1;
+  }
+
+.input__text_isValue {
+    top: -12px !important;
+    font-size: 9px;
+    line-height: 9px;
+  }

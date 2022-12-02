@@ -1,0 +1,32 @@
+.settings-menu {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 5px 11px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  transition: 0.3s background-color;
+}
+
+.settings-menu_active {
+    background-color: var(--menu-button-color);
+  }
+
+.settings-menu__btn-icon {
+    fill: var(--primary-color);
+    transition: 0.3s fill;
+  }
+
+.settings-menu:hover {
+    background-color: var(--menu-button-color);
+  }
+
+.settings-menu_active > .settings-menu__btn-icon {
+    fill: var(--secondary-color);
+  }
+
+.settings-menu:hover > .settings-menu__btn-icon {
+    fill: var(--secondary-color);
+  }
+
