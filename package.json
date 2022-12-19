@@ -1,11 +1,11 @@
-  {
-  "name": "Messenger Sprint 2",
+{
+  "name": "Messenger Sprint 3",
   "version": "1.0.0",
   "description": "---",
   "scripts": {
     "build": "parcel build ./src/index.html",
     "dev": "parcel src/index.html --no-source-maps",
-    "start": "node ./server.js",
+    "start": "node server.js",
     "lint:ts": "npx eslint .",
     "lint:style": "npx stylelint \"**/*.css\" --fix"
   },
@@ -16,16 +16,16 @@
     "img": "./src/image",
     "routes": "./src/routes",
     "types": "./src/types",
-    "data": "./src/data",
     "vendor": "./src/vendor",
     "variables": "./src/variables",
     "utils": "./src/utils",
     "styles": "./src/styles",
-    "api": "./src/api"
+    "api": "./src/Api",
+    "services": "./src/services"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tmj1/Sprint-2"
+    "url": "git+https://github.com/tmj1/Sprint-3"
   },
   "author": "Tatiana Miteva <tmj1@gmail.ru>",
   "license": "ISC",
@@ -41,7 +41,6 @@
     "eslint": "8.28.0",
     "handlebars": "4.7.7",
     "parcel": "2.8.0",
-    "parcel-plugin-handlebars-precompile": "1.0.2",
     "postcss-nested": "5.0.6",
     "stylelint": "14.15.0",
     "stylelint-config-standard": "29.0.0",

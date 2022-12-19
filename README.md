@@ -1,33 +1,48 @@
-# Study project from [Yandex.Practicum](https://practicum.com/)
+## Проект: Messenger
 
-Simple messenger for exchanging messages using web-sockets.
+[![Netlify Status](https://api.netlify.com/api/v1/badges/8d2019e6-98b7-43d0-8cad-a2d86bee843b/deploy-status)](https://app.netlify.com/sites/mellifluous-bunny-f4b9fb/deploys)
 
-Project with imitation own framework based on proxy-objects.
-The main goal is to understand the bases of working react without its usage.
+### Ссылка на проект
 
-Pages:
-1. Authorization
-2. Registration
-3. Chats
-4. Profile
-5. Editing profile
-6. 404 Page
-7. 5** Page
+https://mellifluous-bunny-f4b9fb.netlify.app
 
-There are no libraries except for preprocessors.
+### Ссылка на PR
 
-[Design](https://www.figma.com/file/jF5fFFzgGOxQeB4CmKWTiE/Chat_external_link?node-id=0%3A1) is mostly made by Yandex Praktikum team.
+https://github.com/Karmyshkov/middle.messenger.praktikum.yandex/pull/1
 
-[Hosting on Netlify](----)
+https://github.com/Karmyshkov/middle.messenger.praktikum.yandex/pull/2
 
-## Using technologies
+### Сборка и запуск
 
+Для запуска проекта требуется NodeJS >= 16, сменить версию можно с помощью:
+
+```bash
+nvm use
+```
+
+Проект собирается в [Parcel](https://parceljs.org/):
+
+```bash
+npm run build
+```
+
+Сборка и запуск статического сервера на Express:
+
+```bash
+npm run start
+```
+
+Сборка проекта в Parcel:
+
+```bash
+npm run dev
+```
+
+### Технологии
+
+- HTML
+- CSS (PostCSS)
+- TypeScript
 - Parcel
-- Express
-- Postcss-nested
 - Handlebars
-
-## Using commands
-
-- `npm run build` — create build,
-- `npm run start` — create build and start express-server,
+- Express
