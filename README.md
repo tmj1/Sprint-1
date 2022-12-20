@@ -1,48 +1,30 @@
-## Проект: Messenger
+# Study project from [Yandex.Practicum](https://practicum.com/)
+Sprint 3
+Simple messenger for exchanging messages using web-sockets.
+[Ссылка на Swagger](https://ya-praktikum.tech/api/v2/swagger/#/)
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/8d2019e6-98b7-43d0-8cad-a2d86bee843b/deploy-status)](https://app.netlify.com/sites/mellifluous-bunny-f4b9fb/deploys)
 
-### Ссылка на проект
+Project with imitation own framework based on proxy-objects.
+The main goal is to understand the bases of working react without its usage.
 
-https://mellifluous-bunny-f4b9fb.netlify.app
+Pages:
+1. Authorization
+2. Registration
+3. Chats
+4. Profile
+5. Editing profile
+6. 404 Page
+7. 503 Page
 
-### Ссылка на PR
+## Using technologies
 
-https://github.com/Karmyshkov/middle.messenger.praktikum.yandex/pull/1
-
-https://github.com/Karmyshkov/middle.messenger.praktikum.yandex/pull/2
-
-### Сборка и запуск
-
-Для запуска проекта требуется NodeJS >= 16, сменить версию можно с помощью:
-
-```bash
-nvm use
-```
-
-Проект собирается в [Parcel](https://parceljs.org/):
-
-```bash
-npm run build
-```
-
-Сборка и запуск статического сервера на Express:
-
-```bash
-npm run start
-```
-
-Сборка проекта в Parcel:
-
-```bash
-npm run dev
-```
-
-### Технологии
-
-- HTML
-- CSS (PostCSS)
-- TypeScript
 - Parcel
-- Handlebars
 - Express
+- Postcss-nested
+- Handlebars
+- Typescript
+
+## Using commands
+
+- `npm run build` — create build,
+- `npm run start` — create build and start express-server,

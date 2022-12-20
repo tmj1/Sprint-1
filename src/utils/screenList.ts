@@ -8,6 +8,7 @@ import EditProfile from 'pages/edit-profile';
 import EditPassword from 'pages/edit-password';
 import PathNotFound from 'pages/not-found';
 
+
 const map: Record<Screens, BlockClass<any>> = {
   [Screens.Signin]: Signin,
   [Screens.Signup]: Signup,

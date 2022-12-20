@@ -4,6 +4,7 @@ import { MessageProps } from 'types';
 import { MessageType } from './types';
 import { getDate, MONTH } from 'utils';
 
+
 export class Message extends Block {
   static componentName = 'Message';
   constructor({

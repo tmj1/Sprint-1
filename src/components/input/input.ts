@@ -2,6 +2,7 @@ import { Block } from 'core';
 import './input.css';
 import { InputProps } from './types';
 
+
 export class Input extends Block {
   static componentName = 'Input';
   constructor({

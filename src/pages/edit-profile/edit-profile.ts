@@ -6,6 +6,7 @@ import { handleSubmitForm, checkIsLoginIn } from 'utils';
 import { authService, profileService } from 'services';
 import { UserInfoDTO, UserInfoType, STORE_EVENTS } from 'types';
 
+
 const editProfileformValidator = new FormValidator(
   config,
   EDIT_PROFILE_FORM,
@@ -40,14 +41,14 @@ export class EditProfilePage extends Block {
         editProfileformValidator.clearError();
         editProfileformValidator.toggleBtnState();
       },
-      hendleSubmitForm: (evt: Event) => {
+      handleSubmitForm: (evt: Event) => {
         evt.preventDefault();
         const dataForm = handleSubmitForm({
           stateForm: editProfileformValidator.checkStateForm(),
           inputSelector: config.inputProfileSelector,
           formSelector: EDIT_PROFILE_FORM,
           disableBtn: editProfileformValidator.disableBtn,
-          addErors: editProfileformValidator.addErrorsForInput,
+          addErrors: editProfileformValidator.addErrorsForInput,
           isValidField: editProfileformValidator.isValidFieldWithCustomRules(),
         });
 
@@ -162,7 +163,7 @@ export class EditProfilePage extends Block {
                   formName="profile__form_el_edit-form"
                 }}}
                 {{{Button
-                  onClick=hendleSubmitForm
+                  onClick=handleSubmitForm
                   textBtn="Сохранить"
                   classes="button_page_edit-profile"
                   type="submit"

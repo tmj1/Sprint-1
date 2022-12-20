@@ -4,3 +4,4 @@ export interface BtnProfileProps {
   classes?: string;
   type: 'button' | 'link';
 }
+

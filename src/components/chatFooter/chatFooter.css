@@ -1,47 +1,48 @@
 .chat-footer {
   padding-top: 11px;
-  border-top: 1px solid var(--color-line);
+  border-top: 1px solid var(--line-color);
+}
 
-  &__form {
+.chat-footer__form {
     font-family: inherit;
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
-  &__input {
+.chat-footer__input {
     box-sizing: border-box;
     border-color: transparent;
     outline: none;
     border-width: 1px;
     font-size: 12px;
     width: 100%;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 500;
     line-height: 12px;
     padding: 10px 20px;
-    background-color: var(--color-light-grey);
+    background-color: var(--light-gray-color);
     border-radius: 30px;
     margin: 0 10px;
     transition: 0.3s border-color;
   }
 
-  &__input:hover {
-    border-color: var(--color-grey);
+.chat-footer__input:hover {
+    border-color: var(--gray-color);
   }
 
-  &__input:focus {
-    border-color: var(--color-grey);
+.chat-footer__input:focus {
+    border-color: var(--gray-color);
   }
 
-  &__input::placeholder {
+.chat-footer__input::placeholder {
     font-size: 12px;
-    color: var(--color-grey);
+    color: var(--gray-color);
     font-weight: 500;
     line-height: 12px;
   }
 
-  &__btn-attach {
+.chat-footer__btn-attach {
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -51,14 +52,14 @@
     transition: 0.3s opacity;
   }
 
-  &__btn-attach:hover {
+.chat-footer__btn-attach:hover {
     opacity: 0.8;
   }
 
-  &__btn-send {
+.chat-footer__btn-send {
     box-sizing: border-box;
     cursor: pointer;
-    background-color: var(--color-secondary);
+    background-color: var(--secondary-color);
     border: none;
     padding: 0;
     border-radius: 50%;
@@ -67,11 +68,10 @@
     transition: 0.3s opacity;
   }
 
-  &__btn-send:hover {
+.chat-footer__btn-send:hover {
     opacity: 0.8;
   }
 
-  &__icon-attach {
+.chat-footer__icon-attach {
     width: 32px;
   }
-}

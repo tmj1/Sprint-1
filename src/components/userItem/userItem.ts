@@ -4,6 +4,7 @@ import { UserItemProps } from './types';
 import { BASE_URL_RESOURCES, DATA_ATTRIBUTE_USER_ID } from 'utils';
 import defaultIcon from 'img/avatar.svg';
 
+
 export class UserItem extends Block {
   static componentName = 'UserItem';
   constructor({ id, avatar, login, email, type, role, onClick }: UserItemProps) {

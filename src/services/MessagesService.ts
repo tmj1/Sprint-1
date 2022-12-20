@@ -2,6 +2,7 @@ import { store } from 'core';
 import { BASE_URL_WSS, showTooltip, CONNECTION_PROBLEMS } from 'utils';
 import { InitialStateType } from 'types';
 
+
 class MessagesService {
   private _userId!: string | number;
   private _chatId!: string | number;

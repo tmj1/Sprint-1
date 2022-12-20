@@ -2,20 +2,18 @@
 @import "vendor/fonts.css";
 @import "variables/variables.css";
 
-body {
-  &::-webkit-scrollbar {
+body::-webkit-scrollbar {
     width: 5px;
   }
 
-  &::-webkit-scrollbar-track {
-    background: var(--color-light-grey);
+body::-webkit-scrollbar-track {
+    background: var(--light-gray-color);
   }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--color-grey);
+body::-webkit-scrollbar-thumb {
+    background-color: var(--gray-color);
     border-radius: 20px;
   }
-}
 
 .page {
   box-sizing: border-box;
@@ -24,22 +22,22 @@ body {
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
   height: 100vh;
+}
 
-  &__form {
+.page__form {
     min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  &__search-chat {
+.page__search-chat {
     margin: 0 10px 14px;
   }
 
-  &__link-profile {
+.page__link-profile {
     margin: 21px 10px 23px 0;
   }
-}
 
 .tooltip {
   cursor: pointer;
@@ -49,20 +47,20 @@ body {
   padding: 8px 16px;
   border-radius: 5px;
   font-size: 15px;
-  color: var(--color-third);
+  color: var(--third-color);
   font-weight: 500;
   line-height: 18px;
   transition: 0.3s opacity;
+}
 
-  &:hover {
+.tooltip:hover {
     opacity: 0.8;
   }
 
-  &_is-success {
+.tooltip_is-success {
     background-color: var(--color-success);
   }
 
-  &_is-error {
-    background-color: var(--color-error);
+.tooltip_is-error {
+    background-color: var(--warning-color);
   }
-}

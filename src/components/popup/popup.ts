@@ -2,6 +2,7 @@ import { Block } from 'core';
 import './popup.css';
 import { PopupProps } from './types';
 
+
 export class Popup extends Block {
   static componentName = 'Popup';
   constructor({

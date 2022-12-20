@@ -2,6 +2,7 @@ import { Block } from 'core';
 import './authLink.css';
 import { AuthLinkProps } from './types';
 
+
 export class AuthLink extends Block {
   static componentName = 'AuthLink';
   constructor({ text, onClick }: AuthLinkProps) {

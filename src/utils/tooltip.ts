@@ -4,7 +4,6 @@ type TooltipProp = {
   text: string;
   type: 'error' | 'success';
 };
-
 const tooltip = document.createElement('div');
 tooltip.classList.add(config.tooltipSelector);
 

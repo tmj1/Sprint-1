@@ -1,5 +1,6 @@
 import { ButtonEnum } from 'types';
 
+
 export interface MenuButtonProps {
   text: string;
   icon: string;

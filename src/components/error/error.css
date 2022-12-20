@@ -4,20 +4,21 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
 
-  &__title {
+.error__title {
     margin: 0;
     font-size: 40px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 500;
     line-height: 40px;
     margin-bottom: 20px;
   }
 
-  &__subtitle {
+.error__subtitle {
     margin: 0;
     font-size: 20px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 500;
     line-height: 20px;
     text-align: center;
@@ -25,18 +26,17 @@
     margin-bottom: 69px;
   }
 
-  &__link {
+.error__link {
     background-color: transparent;
     cursor: pointer;
     border: none;
     font-size: 11px;
-    color: var(--color-secondary);
+    color: var(--secondary-color);
     font-weight: 500;
     line-height: 11px;
     transition: 0.3s opacity;
   }
 
-  &__link:hover {
+.error__link:hover {
     opacity: 0.8;
   }
-}

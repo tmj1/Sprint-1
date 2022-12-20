@@ -1,47 +1,49 @@
 .button {
   cursor: pointer;
   border: none;
-  background-color: var(--color-secondary);
+  background-color: var(--secondary-color);
   width: 100%;
   padding: 12px 0;
   border-radius: 8px;
   font-size: 13px;
-  color: var(--color-third);
+  color: var(--third-color);
   font-weight: 500;
   line-height: 13px;
   text-align: center;
   transition: 0.3s opacity;
+}
 
   @media screen and (max-width: 425px) {
-    font-size: 12px;
-    padding: 11px 0;
+    .button {
+      font-size: 12px;
+      padding: 11px 0;
+    }
   }
 
-  &:hover {
+.button:hover {
     opacity: 0.8;
   }
 
-  &_is-auth {
+.button_is-auth {
     margin-bottom: 14px;
   }
 
-  &_page_edit-profile {
+.button_page_edit-profile {
     max-width: 280px;
     margin: 60px auto 0;
   }
 
-  &_page_edit-password {
+.button_page_edit-password {
     max-width: 280px;
     margin: 162px auto 0;
   }
 
-  &_disable {
+.button_disable {
     opacity: 0.8;
     cursor: default;
   }
 
-  &_el_remove-item {
+.button_el_remove-item {
     padding: 8px 0;
     margin-top: 10px;
   }
-}

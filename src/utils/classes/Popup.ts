@@ -1,5 +1,6 @@
 import { View } from './View';
 
+
 export class Popup extends View {
   constructor(
     menuSelector: string,
@@ -15,26 +16,26 @@ export class Popup extends View {
     this._popupChangeAvatarSelector = config.popupChangeAvatarSelector;
     this._popupAddChatSelector = config.popupAddChatSelector;
     this._isActiveChatSelector = config.isActiveChatSelector;
-    this._hiddenChatSelecor = config.hiddenChatSelecor;
+    this._hiddenChatSelector = config.hiddenChatSelector;
     this._isOpenPopupSelector = isOpenPopupSelector;
     this._isActiveBurgerMenuSelector = config.isActiveBurgerMenuSelector;
     this._popoverSelector = config.popoverSelector;
     this._btnAttachSelector = config.btnAttachSelector;
     this._isShowPopoverSelector = config.isShowPopoverSelector;
-    this._contentDialodSelector = config.contentDialodSelector;
+    this._contentDialogSelector = config.contentDialogSelector;
     this._menuItemSelector = config.menuItemSelector;
     this._popupСontainerSelector = config.popupСontainerSelector;
     this._editAvatarSelector = config.editAvatarSelector;
     this.editAvatarTextSelector = config.editAvatarTextSelector;
     this._menuListElementUserSelector = config.menuListElementUserSelector;
     this._menuClassSelector = config.menuClassSelector;
-    this._isShowMenuSelecor = config.isShowMenuSelecor;
+    this._isShowMenuSelector = config.isShowMenuSelector;
     this._menuBtnSelector = config.menuBtnSelector;
     this._editAvatarTextSelector = config.editAvatarTextSelector;
     this._addChatBtnSelector = config.addChatBtnSelector;
     this._editAvatar = document.querySelector(`.${this._editAvatarSelector}`);
     this._editAvatarText = document.querySelector(`.${this.editAvatarTextSelector}`);
-    this._contentDialod = document.querySelector(`.${this._contentDialodSelector}`);
+    this._contentDialog = document.querySelector(`.${this._contentDialogSelector}`);
     this._btnMenu = document.querySelector(`.${this._btnMenuSelector}`);
     this._menu = document.querySelector(`.${this._menuSelector}`);
     this._popupAddUser = document.querySelector(`.${this._popupAddUserSelector}`);
@@ -67,7 +68,7 @@ export class Popup extends View {
   private _handleClosePopup() {
     if (this._menu) {
       document.removeEventListener('click', this._closeByOutsideZone);
-      this._enabledScroll(this._contentDialod);
+      this._enabledScroll(this._contentDialog);
       this._menu.classList.remove(this._isOpenPopupSelector);
       this._menuSelector === this._menuListElementUserSelector &&
         this._removeClassForUserMenu();
@@ -86,8 +87,8 @@ export class Popup extends View {
   private _closeMenuIfPopupIsOpen = (popupContainer: Element | null) => {
     if (popupContainer) {
       document
-        .querySelector(`.${this._isShowMenuSelecor}`)
-        ?.classList.remove(this._isShowMenuSelecor);
+        .querySelector(`.${this._isShowMenuSelector}`)
+        ?.classList.remove(this._isShowMenuSelector);
     }
   };
 
@@ -145,7 +146,7 @@ export class Popup extends View {
   public handleOpenPopup = () => {
     if (this._menu) {
       document.addEventListener('click', this._closeByOutsideZone);
-      this._disabledScroll(this._contentDialod);
+      this._disabledScroll(this._contentDialog);
       this._menu.classList.add(this._isOpenPopupSelector);
       this._menuSelector === this._menuListElementUserSelector &&
         this._addClassForUserMenu();

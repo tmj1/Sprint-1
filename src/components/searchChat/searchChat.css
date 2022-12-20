@@ -4,14 +4,15 @@
   grid-template-columns: 1fr 28px;
   align-items: center;
   gap: 10px;
+}
 
-  &__label {
+.search-chat__label {
     position: relative;
     display: block;
     width: 100%;
   }
 
-  &__img {
+.search-chat__img {
     cursor: text;
     position: absolute;
     top: 50%;
@@ -19,21 +20,22 @@
     transform: translateY(-50%);
   }
 
-  &__btn {
-    position: relative;
-    cursor: pointer;
-    border: none;
-    border-radius: 50%;
-    min-width: 28px;
-    height: 28px;
-    background-color: var(--color-secondary);
-    transition: 0.3s opacity;
+.search-chat__btn {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  min-width: 28px;
+  height: 28px;
+  background-color: var(--secondary-color);
+  transition: 0.3s opacity;
+}
 
-    &:hover {
+.search-chat__btn:hover {
       opacity: 0.7;
     }
 
-    &::before {
+.search-chat__btn::before {
       content: '';
       position: absolute;
       top: 50%;
@@ -41,10 +43,10 @@
       transform: translate(-50%, -50%);
       width: 50%;
       height: 2px;
-      background-color: var(--color-third);
+      background-color: var(--third-color);
     }
 
-    &::after {
+.search-chat__btn::after {
       content: '';
       position: absolute;
       top: 50%;
@@ -52,7 +54,5 @@
       transform: translate(-50%, -50%);
       width: 2px;
       height: 50%;
-      background-color: var(--color-third);
+      background-color: var(--third-color);
     }
-  }
-}

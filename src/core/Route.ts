@@ -4,6 +4,7 @@ import Block from 'core/Block';
 import { isEqual } from 'utils';
 import { REGEXP_REPLACE_PATHNAME } from 'utils/constants';
 
+
 export class Route<P = any> {
   private pathname: string;
   private blockClass: BlockClass<P>;

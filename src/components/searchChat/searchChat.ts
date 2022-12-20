@@ -4,6 +4,7 @@ import { SearchChatProps } from './types';
 import search from 'img/search.svg';
 import { config, Popup } from 'utils';
 
+
 export class SearchChat extends Block {
   static componentName = 'SearchChat';
   constructor({ onSearchByChats }: SearchChatProps) {
@@ -11,7 +12,7 @@ export class SearchChat extends Block {
   }
   protected getStateFromProps() {
     this.state = {
-      hendleSubmitForm: (evt: Event) => {
+      handleSubmitForm: (evt: Event) => {
         evt.preventDefault();
         new Popup(
           config.popupAddChatSelector,
@@ -31,7 +32,7 @@ export class SearchChat extends Block {
           <img class="search-chat__img" src="${search}" alt="Поиск по чату" />
         </label>
         {{{Button
-          onClick=hendleSubmitForm
+          onClick=handleSubmitForm
           type="button"
           classes="search-chat__btn"
         }}}

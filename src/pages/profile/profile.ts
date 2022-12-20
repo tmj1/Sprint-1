@@ -6,6 +6,7 @@ import { authService, profileService } from 'services';
 import { STORE_EVENTS } from 'types';
 import { checkIsLoginIn } from 'utils';
 
+
 export class ProfilePage extends Block {
   constructor(...args: any) {
     super(...args);

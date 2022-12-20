@@ -4,80 +4,81 @@
   display: grid;
   grid-template-columns: 310px 1fr;
   height: 100%;
+}
 
-  &__column {
+.chat__column {
     list-style: none;
   }
 
-  &__column_left {
-    background-color: var(--color-bg-list);
-    border-right: 1px solid var(--color-line);
+.chat__column_left {
+    background-color: var(--bg-list-color);
+    border-right: 1px solid var(--line-color);
     overflow-y: auto;
     text-align: right;
   }
 
-  &__column_left::-webkit-scrollbar {
+.chat__column_left::-webkit-scrollbar {
     width: 0;
   }
 
-  &__column-default {
+.chat__column-default {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  &__column-dialog {
+.chat__column-dialog {
     display: flex;
     flex-direction: column;
     margin: 10px 20px;
     overflow-y: auto;
   }
 
-  &__column-dialog::-webkit-scrollbar {
+.chat__column-dialog::-webkit-scrollbar {
     width: 0;
   }
 
-  &__column_is-hidden {
+.chat__column_is-hidden {
     display: none;
   }
 
-  &__list {
+.chat__list {
     margin: 0;
     padding: 0;
   }
 
-  &__title {
+.chat__title {
     margin: 0;
     font-size: 12px;
-    color: var(--color-grey);
+    color: var(--gray-color);
     font-weight: 500;
     line-height: 12px;
   }
 
-  &__header {
+.chat__header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 1px solid var(--color-dark-line);
+    border-bottom: 1px solid var(--dark-line-color);
     padding-bottom: 10px;
   }
 
-  &__inner {
+.chat__inner {
     display: flex;
     align-items: center;
   }
 
-  &__user-name {
+.chat__user-name {
     margin: 0;
     font-size: 13px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 600;
     line-height: 13px;
   }
 
-  &__text-date {
+.chat__text-date {
     font-size: 12px;
-    color: var(--color-grey);
+    color: var(--gray-color);
     font-weight: 500;
     line-height: 12px;
     text-align: center;
@@ -85,11 +86,10 @@
     width: 100%;
   }
 
-  &__messages {
+.chat__messages {
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     flex-grow: 1;
   }
-}

@@ -9,6 +9,7 @@ import file from 'img/file.svg';
 import location from 'img/location.svg';
 import { chatService } from 'services';
 
+
 export class Menu extends Block {
   static componentName = 'Menu';
   constructor({ isUser, chatItemId }: MenuProps) {
@@ -37,7 +38,7 @@ export class Menu extends Block {
       },
       handleRemoveChat: () => {
         chatService.removeChatById({ chatId: this.state.chatItemId });
-        Popup.handleClosePopup(config.isShowMenuSelecor);
+        Popup.handleClosePopup(config.isShowMenuSelector);
       },
     };
   }

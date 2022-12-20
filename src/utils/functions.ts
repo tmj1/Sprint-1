@@ -11,20 +11,19 @@ import { showTooltip } from 'utils';
 
 interface SubmitFormProps {
   disableBtn: () => void;
-  addErors: () => void;
+  addErrors: () => void;
   stateForm: boolean;
   inputSelector: string;
   formSelector: string;
   isValidField?: boolean | undefined;
-  isNotCloseBySbmit?: boolean;
+  isNotCloseBySubmit?: boolean;
 }
-
 const handleSubmitForm = ({
   stateForm,
   inputSelector,
   formSelector,
   disableBtn,
-  addErors,
+  addErrors,
   isValidField = undefined,
 }: SubmitFormProps) => {
   if (stateForm && isValidField === undefined) {
@@ -47,7 +46,7 @@ const handleSubmitForm = ({
     }
   } else {
     disableBtn();
-    addErors();
+    addErrors();
   }
 };
 
@@ -82,7 +81,7 @@ function getDate(time: string) {
 }
 
 function fixedBottomScroll() {
-  const chat = document.querySelector(`.${config.contentDialodSelector}`);
+  const chat = document.querySelector(`.${config.contentDialogSelector}`);
 
   if (chat) {
     chat.scrollTop = chat.scrollHeight;

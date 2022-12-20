@@ -1,8 +1,8 @@
 export abstract class View {
   protected _isActiveChatSelector!: string;
-  protected _hiddenChatSelecor!: string;
-  protected _contentDialodSelector!: string;
-  protected _contentDialod!: Nullable<HTMLElement>;
+  protected _hiddenChatSelector!: string;
+  protected _contentDialogSelector!: string;
+  protected _contentDialog!: Nullable<HTMLElement>;
   // Chat
   protected _element!: Element;
   protected _messagesSelector!: string;
@@ -36,7 +36,7 @@ export abstract class View {
   protected _menuListElementUserSelector!: string;
   protected _menuClassSelector!: string;
   protected _menuSe_editAvatarSelectorlector!: string;
-  protected _isShowMenuSelecor!: string;
+  protected _isShowMenuSelector!: string;
   protected _menuBtnSelector!: string;
   protected _editAvatar!: Nullable<HTMLElement>;
   protected _editAvatarText!: Nullable<HTMLElement>;
@@ -62,3 +62,4 @@ export abstract class View {
   protected _errorContainer: Element | null | undefined;
   public _isValidFieldWithCustomRules!: Record<string, boolean> | null;
 }
+

@@ -1,5 +1,6 @@
 import { Block } from 'core';
 
+
 interface BlockClass<P> extends Function {
   new (props: P): Block<P>;
   componentName?: string;

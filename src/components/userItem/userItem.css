@@ -3,63 +3,63 @@
   margin-bottom: 12px;
   display: flex;
   gap: 0 14px;
+}
 
-  &:last-of-type {
+.user-item:last-of-type {
     margin: 0;
   }
 
-  &__wrapper {
+.user-item__wrapper {
     max-width: 212px;
     overflow: hidden;
   }
 
-  &__text-login {
+.user-item__text-login {
     margin: 0;
     font-size: 16px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 500;
     line-height: 20px;
   }
 
-  &__text-email {
+.user-item__text-email {
     margin: 0;
     font-size: 12px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 400;
     line-height: 16px;
   }
 
-  &__avatar {
+.user-item__avatar {
     max-height: 44px;
     max-width: 44px;
     border-radius: 50%;
   }
 
-  &__role {
+.user-item__role {
     margin: 0;
     font-size: 11px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 400;
     line-height: 16px;
   }
 
-  &__btn {
+.user-item__btn {
     cursor: pointer;
     background-color: transparent;
-    border: 1px solid var(--color-secondary);
+    border: 1px solid var(--secondary-color);
     border-radius: 50%;
     align-self: center;
     margin-left: auto;
     margin-right: 7px;
     font-size: 20px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 500;
     width: 27px;
     transition: 0.3s background-color, 0.3s color;
   }
 
-  &__btn:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-third);
+.user-item__btn:hover {
+    background-color: var(--secondary-color);
+    color: var(--third-color);
   }
-}

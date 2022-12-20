@@ -6,6 +6,7 @@ import { handleSubmitForm, checkOnValueInput } from 'utils';
 import { authService } from 'services';
 import { SignupType } from 'types';
 
+
 const signupFormValidator = new FormValidator(
   config,
   AUTH_FORM,
@@ -23,14 +24,14 @@ export class SignupPage extends Block {
         signupFormValidator.clearError();
         signupFormValidator.toggleBtnState();
       },
-      hendleSubmitForm: (evt: Event) => {
+      handleSubmitForm: (evt: Event) => {
         evt.preventDefault();
         const dataForm = handleSubmitForm({
           stateForm: signupFormValidator.checkStateForm(),
           inputSelector: config.inputSelector,
           formSelector: AUTH_FORM,
           disableBtn: signupFormValidator.disableBtn,
-          addErors: signupFormValidator.addErrorsForInput,
+          addErrors: signupFormValidator.addErrorsForInput,
           isValidField: signupFormValidator.isValidFieldWithCustomRules(),
         });
 
@@ -121,7 +122,7 @@ export class SignupPage extends Block {
               name="repeatPassword"
             }}}
             {{{Button
-              onClick=hendleSubmitForm
+              onClick=handleSubmitForm
               textBtn="Зарегистрироваться"
               type="submit"
               classes="button_is-auth"

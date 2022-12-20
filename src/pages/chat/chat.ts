@@ -25,6 +25,7 @@ import {
 } from 'utils';
 import { chatService, messagesService, profileService, authService } from 'services';
 
+
 const addChatFromValidator = new FormValidator(
   config,
   ADD_CHAT_FORM,
@@ -115,7 +116,7 @@ export class ChatPage extends Block {
         new Popup(
           config.menuListElementUserSelector,
           config.burgerMenuSelector,
-          config.isShowMenuSelecor,
+          config.isShowMenuSelector,
           config
         ).handleOpenPopup();
       },
@@ -123,7 +124,7 @@ export class ChatPage extends Block {
         new Popup(
           config.menuListElementFileSelector,
           config.btnAttachSelector,
-          config.isShowMenuSelecor,
+          config.isShowMenuSelector,
           config
         ).handleOpenPopup();
       },
@@ -132,14 +133,14 @@ export class ChatPage extends Block {
         addChatFromValidator.clearError();
         addChatFromValidator.toggleBtnState();
       },
-      hendleSubmitAddChatForm: (evt: Event) => {
+      handleSubmitAddChatForm: (evt: Event) => {
         evt.preventDefault();
         const dataForm = handleSubmitForm({
           stateForm: addChatFromValidator.checkStateForm(),
           inputSelector: config.inputSelector,
           formSelector: ADD_CHAT_FORM,
           disableBtn: addChatFromValidator.disableBtn,
-          addErors: addChatFromValidator.addErrorsForInput,
+          addErrors: addChatFromValidator.addErrorsForInput,
         });
 
         dataForm && chatService.createChat(dataForm as CreateChatType);
@@ -157,14 +158,14 @@ export class ChatPage extends Block {
         addUserFormValidator.clearError();
         addUserFormValidator.toggleBtnState();
       },
-      hendleFindUserByLogin: (evt: Event) => {
+      handleFindUserByLogin: (evt: Event) => {
         evt.preventDefault();
         const dataForm = handleSubmitForm({
           stateForm: addUserFormValidator.checkStateForm(),
           inputSelector: config.inputSelector,
           formSelector: ADD_USER_FORM,
           disableBtn: addUserFormValidator.disableBtn,
-          addErors: addUserFormValidator.addErrorsForInput,
+          addErrors: addUserFormValidator.addErrorsForInput,
         });
 
         if (dataForm) {
@@ -322,7 +323,7 @@ export class ChatPage extends Block {
         {{{Menu isUser=true chatItemId="${chatItemId}"}}}
         {{{Menu isUser=false}}}
         {{{Popup
-          onSubmit=hendleSubmitAddChatForm
+          onSubmit=handleSubmitAddChatForm
           onInput=handleChangeAddChatInput
           onFocus=handleValidateAddChatInput
           onBlur=handleValidateAddChatInput
@@ -336,7 +337,7 @@ export class ChatPage extends Block {
           fieldName="title"
         }}}
         {{{Popup
-          onSubmit=hendleFindUserByLogin
+          onSubmit=handleFindUserByLogin
           onInput=handleChangeAddUserInput
           onFocus=handleValidateAddUserInput
           onBlur=handleValidateAddUserInput

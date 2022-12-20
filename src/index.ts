@@ -7,6 +7,7 @@ components.forEach((component) => {
   registerComponent(component);
 });
 
+
 document.addEventListener('DOMContentLoaded', () => {
   router
     .use('/', getScreenComponent(Screens.Signin))

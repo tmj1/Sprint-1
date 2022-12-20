@@ -4,34 +4,34 @@
   padding: 15px;
   border-radius: 12px;
   box-shadow: 0 0 6px var(--shadow);
-  color: var(--color-third);
-  background-color: var(--color-third);
+  color: var(--third-color);
+  background-color: var(--third-color);
+}
 
-  &_is-show {
+.menu_is-show {
     display: block;
   }
 
-  &__list {
+.menu__list {
     margin: 0;
     padding: 0;
   }
 
-  &__list_element_user {
+.menu__list_element_user {
     top: 75px;
     right: 10px;
   }
 
-  &__list_element_file {
+.menu__list_element_file {
     bottom: 65px;
     left: 321px;
   }
 
-  &__item {
+.menu__item {
     list-style: none;
     margin-bottom: 16px;
   }
 
-  &__item:last-of-type {
+.menu__item:last-of-type {
     margin-bottom: 0;
   }
-}

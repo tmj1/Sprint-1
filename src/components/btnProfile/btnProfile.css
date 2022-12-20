@@ -1,17 +1,18 @@
 .btn-profile {
   list-style: none;
   text-align: left;
-  border-bottom: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--line-color);
   padding-bottom: 10px;
   margin-bottom: 10px;
+}
 
-  &:last-of-type {
+.btn-profile:last-of-type {
     border-bottom: none;
     padding-bottom: 0;
     margin-bottom: 0;
   }
 
-  &__link {
+.btn-profile__link {
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -23,19 +24,19 @@
     transition: 0.3s opacity;
   }
 
-  &__link:hover {
+.btn-profile__link:hover {
     opacity: 0.7;
   }
 
-  &__link_color_red {
-    color: var(--color-link-red);
+.btn-profile__link_color_red {
+    color: var(--link-red-color);
   }
 
-  &__link_color_blue {
-    color: var(--color-secondary);
+.btn-profile__link_color_blue {
+    color: var(--secondary-color);
   }
 
-  &__btn {
+.btn-profile__btn {
     cursor: pointer;
     background-color: transparent;
     border: none;
@@ -46,7 +47,6 @@
     transition: 0.3s opacity;
   }
 
-  &__btn:hover {
+.btn-profile__btn:hover {
     opacity: 0.7;
   }
-}

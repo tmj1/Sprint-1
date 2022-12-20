@@ -4,6 +4,7 @@ import { EditAvatarProps } from './types';
 import defaultIcon from 'img/avatar.svg';
 import { BASE_URL_RESOURCES } from 'utils';
 
+
 export class EditAvatar extends Block {
   static componentName = 'EditAvatar';
   constructor({ avatar, onClick }: EditAvatarProps) {

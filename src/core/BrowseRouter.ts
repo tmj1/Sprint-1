@@ -2,6 +2,7 @@ import { BlockClass, props } from 'types';
 import { Route } from './Route';
 import { PATHNAMES } from 'utils';
 
+
 class BrowseRouter {
   static __instance: BrowseRouter;
   private routers: Array<Route> = [];

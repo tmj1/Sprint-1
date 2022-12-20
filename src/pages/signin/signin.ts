@@ -6,6 +6,7 @@ import { handleSubmitForm, checkOnValueInput } from 'utils';
 import { authService } from 'services';
 import { SigninType } from 'types';
 
+
 const signinFormValidator = new FormValidator(
   config,
   AUTH_FORM,
@@ -23,14 +24,14 @@ export class SigninPage extends Block {
         signinFormValidator.clearError();
         signinFormValidator.toggleBtnState();
       },
-      hendleSubmitForm: (evt: Event) => {
+      handleSubmitForm: (evt: Event) => {
         evt.preventDefault();
         const dataForm = handleSubmitForm({
           stateForm: signinFormValidator.checkStateForm(),
           inputSelector: config.inputSelector,
           formSelector: AUTH_FORM,
           disableBtn: signinFormValidator.disableBtn,
-          addErors: signinFormValidator.addErrorsForInput,
+          addErrors: signinFormValidator.addErrorsForInput,
         });
 
         dataForm && authService.signin(dataForm as SigninType);
@@ -68,7 +69,7 @@ export class SigninPage extends Block {
               name="password"
             }}}
             {{{Button
-              onClick=hendleSubmitForm
+              onClick=handleSubmitForm
               textBtn="Авторизоваться"
               type="submit"
               classes="button_is-auth"

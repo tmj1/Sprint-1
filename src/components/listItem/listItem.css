@@ -2,51 +2,52 @@
   list-style: none;
   transition: 0.3s background-color;
   text-align: left;
+}
 
-  &_is-active {
-    background-color: var(--color-light-blue);
+.list-item_is-active {
+    background-color: var(--light-blue-color);
   }
 
-  &:hover {
+.list-item:hover {
     cursor: pointer;
-    background-color: var(--color-light-blue);
+    background-color: var(--light-blue-color);
   }
 
-  &__container {
+.list-item__container {
     display: flex;
     padding: 12px 0;
-    border-top: 1px solid var(--color-line);
+    border-top: 1px solid var(--line-color);
     margin: 0 10px;
   }
 
-  &__container:last-of-type {
-    border-bottom: 1px solid var(--color-line);
+.list-item__container:last-of-type {
+    border-bottom: 1px solid var(--line-color);
   }
 
-  &__user-name {
+.list-item__user-name {
     margin: 0;
     font-size: 13px;
-    color: var(--color-primaty);
+    color: var(--primary-color);
     font-weight: 600;
     line-height: 13px;
     margin-bottom: 6px;
   }
 
-  &__message {
+.list-item__message {
     margin: 0;
     max-width: 193px;
     font-size: 12px;
-    color: var(--color-grey);
+    color: var(--gray-color);
     font-weight: 500;
     line-height: 15px;
   }
 
-  &__message_bold {
-    color: var(--color-primaty);
+.list-item__message_bold {
+    color: var(--primary-color);
     margin-right: 3px;
   }
 
-  &__wrap {
+.list-item__wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -54,38 +55,37 @@
     flex-grow: 1;
   }
 
-  &__time {
+.list-item__time {
     margin: 0;
     white-space: nowrap;
     align-self: flex-end;
     font-size: 9px;
-    color: var(--color-grey);
+    color: var(--gray-color);
     font-weight: 500;
     line-height: 13px;
   }
 
-  &__count-message {
+.list-item__count-message {
     display: none;
     margin: 0;
     align-self: flex-end;
     font-size: 11px;
-    color: var(--color-third);
+    color: var(--third-color);
     font-weight: 500;
     line-height: 12px;
     padding: 4px 7px;
-    background-color: var(--color-secondary);
+    background-color: var(--secondary-color);
     border-radius: 50%;
   }
 
-  &__count-message_is-show {
+.list-item__count-message_is-show {
     display: block;
   }
 
-  &__plug-avatar {
+.list-item__plug-avatar {
     margin-right: 10px;
     width: 47px;
     height: 47px;
     border-radius: 50%;
-    background-color: var(--color-light-grey);
+    background-color: var(--light-gray-color);
   }
-}

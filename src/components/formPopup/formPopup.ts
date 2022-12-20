@@ -1,6 +1,7 @@
 import { Block } from 'core';
 import './formPopup.css';
 
+
 export class FormPopup extends Block {
   static componentName = 'FormPopup';
   constructor({

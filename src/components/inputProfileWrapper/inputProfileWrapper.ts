@@ -2,6 +2,7 @@ import { Block } from 'core';
 import './inputProfileWrapper.css';
 import { InputProfileWrapperProps } from './types';
 
+
 export class InputProfileWrapper extends Block {
   static componentName = 'InputProfileWrapper';
   constructor({

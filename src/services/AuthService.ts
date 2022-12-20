@@ -1,4 +1,4 @@
-import { authAPI } from 'api';
+import { authAPI } from '../Api';
 import { SignupType, SigninType } from 'types';
 import { BrowseRouter as router, store } from 'core';
 import {
@@ -8,6 +8,7 @@ import {
   SUCCESS_SIGNIN_MESSAGE,
   PATHNAMES,
 } from 'utils';
+
 
 class AuthService {
   public signup({ email, login, first_name, second_name, phone, password }: SignupType) {
@@ -19,7 +20,7 @@ class AuthService {
           type: 'success',
         });
         localStorage.setItem('isSignin', 'true');
-        router.go(PATHNAMES['MESSAGER_PATH']);
+        router.go(PATHNAMES['MESSENGER_PATH']);
       })
       .catch(showError);
   }
@@ -33,7 +34,7 @@ class AuthService {
           type: 'success',
         });
         localStorage.setItem('isSignin', 'true');
-        router.go(PATHNAMES['MESSAGER_PATH']);
+        router.go(PATHNAMES['MESSENGER_PATH']);
       })
       .catch(showError);
   }

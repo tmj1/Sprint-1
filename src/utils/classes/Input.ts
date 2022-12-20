@@ -1,5 +1,6 @@
 import { View } from './View';
 
+
 export class Input extends View {
   constructor(config: Record<string, string>, element: EventTarget) {
     super();

@@ -1,6 +1,7 @@
 import { BaseAPI } from './BaseAPI';
 import { SignupType, SigninType } from 'types';
 
+
 class AuthAPI extends BaseAPI {
   constructor() {
     super({ path: '/auth' });

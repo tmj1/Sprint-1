@@ -9,6 +9,7 @@ import {
   REGEXP_FOR_PHONE,
 } from 'utils/constants';
 
+
 export class FormValidator extends View {
   constructor(
     config: Record<string, string>,

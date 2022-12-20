@@ -4,21 +4,21 @@
   max-height: 160px;
   overflow-y: auto;
   overflow-x: hidden;
+}
 
-  &::-webkit-scrollbar {
+.users::-webkit-scrollbar {
     width: 5px;
   }
 
-  &::-webkit-scrollbar-track {
-    background: var(--color-light-grey);
+.users::-webkit-scrollbar-track {
+    background: var(--light-gray-color);
   }
 
-  &::-webkit-scrollbar-thumb {
-    background-color: var(--color-grey);
+.users::-webkit-scrollbar-thumb {
+    background-color: var(--gray-color);
     border-radius: 20px;
   }
 
-  &_is-margin {
+.users_is-margin {
     margin-top: 35px;
   }
-}

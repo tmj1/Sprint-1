@@ -4,6 +4,7 @@ import { AvatarProps } from './types';
 import defaultIcon from 'img/avatar.svg';
 import { BASE_URL_RESOURCES } from 'utils';
 
+
 export class Avatar extends Block {
   static componentName = 'Avatar';
   constructor({ srcAvatar, userName }: AvatarProps) {

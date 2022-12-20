@@ -4,6 +4,7 @@ import { ChatFooterProps } from './types';
 import attachBtn from 'img/attach-btn.svg';
 import sendBtn from 'img/send-btn.svg';
 
+
 export class ChatFooter extends Block {
   static componentName = 'ChatFooter';
   constructor({ onSubmit, onClick }: ChatFooterProps) {

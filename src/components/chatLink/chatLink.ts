@@ -3,6 +3,7 @@ import './chatLink.css';
 import { ChatLinkProps } from './types';
 import rightArrow from 'img/right-arrow.svg';
 
+
 export class ChatLink extends Block {
   static componentName = 'ChatLink';
   constructor({ onClick }: ChatLinkProps) {

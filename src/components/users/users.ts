@@ -3,6 +3,7 @@ import './users.css';
 import { UsersProps } from './types';
 import { UserType } from 'types';
 
+
 export class Users extends Block {
   static componentName = 'Users';
   constructor({ users, type, onClick }: UsersProps) {

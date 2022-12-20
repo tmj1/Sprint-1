@@ -3,6 +3,7 @@ import './btnBackProfile.css';
 import { BtnBackProfileProps } from './types';
 import left_arrow from 'img/left-arrow.svg';
 
+
 export class BtnBackProfile extends Block {
   static componentName = 'BtnBackProfile';
   constructor({ onClick }: BtnBackProfileProps) {

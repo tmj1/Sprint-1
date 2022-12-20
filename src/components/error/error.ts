@@ -2,6 +2,7 @@ import { Block } from 'core';
 import './error.css';
 import { ErrorProps } from './types';
 
+
 export class Error extends Block {
   static componentName = 'Error';
   constructor({ title, subtitle, onClick }: ErrorProps) {

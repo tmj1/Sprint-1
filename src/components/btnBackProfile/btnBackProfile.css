@@ -1,9 +1,9 @@
 .profile-btn {
   list-style: none;
-  background-color: var(--color-bg-list);
-  border-right: 1px solid var(--color-line);
-
-  &__link {
+  background-color: var(--bg-list-color);
+  border-right: 1px solid var(--line-color);
+}
+.profile-btn__link {
     box-sizing: border-box;
     cursor: pointer;
     border: none;
@@ -16,17 +16,16 @@
     transition: 0.3s opacity;
   }
 
-  &__link:hover {
+.profile-btn__link:hover {
     opacity: 0.8;
   }
 
-  &__wrap {
+.profile-btn__wrap {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-secondary);
+    background-color: var(--secondary-color);
     border-radius: 50%;
     width: 28px;
     height: 28px;
   }
-}

@@ -26,3 +26,4 @@
   from = "/edit-password"
   to = "/"
   status = 200
+

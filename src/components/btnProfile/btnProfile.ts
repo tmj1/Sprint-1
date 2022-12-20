@@ -2,6 +2,7 @@ import { Block } from 'core';
 import './btnProfile.css';
 import { BtnProfileProps } from './types';
 
+
 export class BtnProfile extends Block {
   static componentName = 'BtnProfile';
   constructor({ onClick, text, classes, type }: BtnProfileProps) {

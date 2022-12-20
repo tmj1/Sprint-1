@@ -4,6 +4,7 @@ import { ListItemProps } from './types';
 import { ChatType } from 'types';
 import { getDate, DAYS, DATA_ATTRIBUTE_CHAT_ID } from 'utils';
 
+
 export class ListItem extends Block {
   static componentName = 'ListItem';
   constructor({

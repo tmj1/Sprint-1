@@ -7,13 +7,14 @@
   overflow: hidden;
   border-radius: 50%;
   margin-bottom: 21px;
+}
 
-  &::before {
+.edit-avatar::before {
     content: "";
     display: inline-block;
     width: 100%;
     height: 100%;
-    background-color: var(--color-overlay-avatar);
+    background-color: var(--overlay-avatar-color);
     border-radius: 50%;
     position: absolute;
     top: 0;
@@ -22,7 +23,7 @@
     transition: 0.3s opacity;
   }
 
-  &__span {
+.edit-avatar__span {
     opacity: 0;
     position: absolute;
     top: 50%;
@@ -30,16 +31,15 @@
     transform: translate(-50%, -50%);
     transition: 0.3s opacity;
     font-size: 13px;
-    color: var(--color-third);
+    color: var(--third-color);
     font-weight: 500;
     line-height: 14px;
   }
 
-  &:hover::before {
+.edit-avatar:hover::before {
     opacity: 1;
   }
 
-  &:hover > &__span {
+.edit-avatar:hover > .edit-avatar__span {
     opacity: 1;
   }
-}

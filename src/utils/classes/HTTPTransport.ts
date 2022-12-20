@@ -6,6 +6,7 @@ enum METHODS {
   DELETE = 'DELETE',
 }
 
+
 type RequestData = Record<string, string | number>;
 
 type RequestOptions = {

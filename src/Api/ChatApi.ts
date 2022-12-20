@@ -8,6 +8,7 @@ import {
   RemoveUserFromChat,
 } from 'types';
 
+
 class ChatApi extends BaseAPI {
   constructor() {
     super({ path: '/chats' });

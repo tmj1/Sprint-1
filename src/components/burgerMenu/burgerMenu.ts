@@ -2,6 +2,7 @@ import { Block } from 'core';
 import './burgerMenu.css';
 import { BurgerMenuProps } from './types';
 
+
 export class BurgerMenu extends Block {
   static componentName = 'BurgerMenu';
   constructor({ onClick }: BurgerMenuProps) {

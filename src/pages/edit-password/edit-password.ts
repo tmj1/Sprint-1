@@ -10,6 +10,7 @@ import { handleSubmitForm, showTooltip, checkIsLoginIn } from 'utils';
 import { authService, profileService } from 'services';
 import { UserPasswordType, STORE_EVENTS } from 'types';
 
+
 const editPassowrdformValidator = new FormValidator(
   config,
   EDIT_PASSWORD_FORM,
@@ -44,14 +45,14 @@ export class EditPasswordPage extends Block {
         editPassowrdformValidator.clearError();
         editPassowrdformValidator.toggleBtnState();
       },
-      hendleSubmitForm: (evt: Event) => {
+      handleSubmitForm: (evt: Event) => {
         evt.preventDefault();
         const dataForm = handleSubmitForm({
           stateForm: editPassowrdformValidator.checkStateForm(),
           inputSelector: config.inputProfileSelector,
           formSelector: EDIT_PASSWORD_FORM,
           disableBtn: editPassowrdformValidator.disableBtn,
-          addErors: editPassowrdformValidator.addErrorsForInput,
+          addErrors: editPassowrdformValidator.addErrorsForInput,
         });
 
         if (dataForm) {
@@ -130,7 +131,7 @@ export class EditPasswordPage extends Block {
                   formName="profile__form_el_edit-password-form"
                 }}}
                 {{{Button
-                  onClick=hendleSubmitForm
+                  onClick=handleSubmitForm
                   textBtn="Сохранить"
                   classes="button_page_edit-password"
                   type="submit"

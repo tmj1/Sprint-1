@@ -13,6 +13,7 @@ import {
   STORE_EVENTS,
 } from 'types';
 
+
 class ProfileService {
   public changeAvatar(avatar: FormData) {
     profileApi
